@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import sys
+
+def contains(left, right):
+  for x in left:
+    if x not in right:
+      return False
+    else:
+      right = right.replace(x, "", 1)
+
+  return True
+
+for line in sys.stdin:
+  left,right = line.strip().upper().split()
+  print(contains(left, right))
