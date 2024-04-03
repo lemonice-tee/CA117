@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+import sys
+
+d = {
+"zero" : "naid",
+"one" : "aon",
+"two" : "do",
+"three" : "tri",
+"four" : "ceathar",
+"five" : "cuig",
+"six" : "se",
+"seven" : "seacht",
+"eight" : "",
+"nine" : "nine",
+"ten" : "ten"
+}
+
+with open(sys.argv[1], 'r') as f:
+    def num_to_words(num):
+      nums = []
+      for n in num:
+        if n in d:
+      nums.append(d[n])
+  print(" ".join(nums))
+
+  
+  #for num in range(0,(10 + 1)):
+    # create list of nums(int)
+    #          "         (words)
+    # create dictionary
+    # key=int
+    # val=words
+    # for word == key:
+    #   print(item)
+
+
+for line in sys.stdin:
+  num = line.strip().split()
+  num_to_words(num)
+
