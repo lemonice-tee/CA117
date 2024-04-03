@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+import sys
+
+for line in sys.stdin:
+  line = line.strip().split()
+  seen = []
+  for x in line:
+    if x.isalnum:
+      if x not in seen:
+        seen.append(x)
+      else
