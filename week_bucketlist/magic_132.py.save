@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import sys
+
+import math
+
+lines = sys.stdin.readline().strip()
+
+
+#start_pt = math.floor()
+
+# NOTES
+# if lines == 1 / lines == 2:
+#   magic numbers = '39'
+#   output = magic numbers .split() [lines - 1]
+
+# output length: log base 2(line rounded down to nearest 2^x)
